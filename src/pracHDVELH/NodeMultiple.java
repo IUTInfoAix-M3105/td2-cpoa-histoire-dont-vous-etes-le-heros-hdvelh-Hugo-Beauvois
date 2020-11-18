@@ -52,7 +52,7 @@ public class NodeMultiple {
 	 * @param i        the daughter node's index
 	 */
 	public void setDaughter(NodeMultiple daughter, int i) {
-		if (i < 0 || i >= NODE_MAX_ARITY) {
+		if (i<0 || i >= NODE_MAX_ARITY) {
 			ErrorNaiveHandler.abort(ERROR_MSG_INDEX_OUT_OF_RANGE+"@"+getClass()+".setDaughters()");
 		}
 		daughters[i] = daughter;
@@ -69,7 +69,7 @@ public class NodeMultiple {
 	 * @param daughters the daughters to set
 	 */
 	public void setDaughters(NodeMultiple[] daughters) {
-		/* TO BE COMPLETED */
+		this.daughters = daughters;
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class NodeMultiple {
 	 * @param data
 	 */
 	public void setData(Object data) {
-		/* TO BE COMPLETED */
+		this.data = data;
 	}
 
 	/**
